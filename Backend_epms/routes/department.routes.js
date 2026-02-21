@@ -25,4 +25,12 @@ router.post("/", (req, res) => {
   });
 });
 
+router.get("/", (req, res) => {
+  const sql = `SELECT department_code, DepartmentName FROM Department`;
+  db.query(sql, (err, results) => {
+    if (err) return res.status(500).json({ error: err.message });
+    res.json(results);
+  });
+});
+
 module.exports = router;

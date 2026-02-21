@@ -20,6 +20,9 @@ function Navbar() {
           <Link to="/report" className="text-white hover:text-blue-200">
             Report
           </Link>
+          <Link to="/assign-department" className="text-white hover:text-blue-200" >
+            Assign Department
+            </Link>
         </div>
       </div>
     </nav>

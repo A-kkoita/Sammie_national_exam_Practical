@@ -62,12 +62,12 @@ function SalaryReport() {
             report.map((r) => (
               <tr key={r.employeeNumber + r.month} className="text-center border-b">
                 <td className="px-4 py-2">{r.employeeNumber}</td>
-                <td className="px-4 py-2">{r.firstName}</td>
-                <td className="px-4 py-2">{r.lastName}</td>
-                <td className="px-4 py-2">{r.departmentName}</td>
-                <td className="px-4 py-2">{r.grossSalary}</td>
-                <td className="px-4 py-2">{r.totalDeduction}</td>
-                <td className="px-4 py-2">{r.netSalary}</td>
+                <td className="px-4 py-2">{r.FirstName}</td>
+                <td className="px-4 py-2">{r.LastName}</td>
+                <td className="px-4 py-2">{r.DepartmentName}</td>
+                <td className="px-4 py-2">{r.GrossSalary}</td>
+                <td className="px-4 py-2">{r.TotalDeduction}</td>
+                <td className="px-4 py-2">{r.NetSalary}</td>
               </tr>
             ))
           )}
