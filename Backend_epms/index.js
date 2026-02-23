@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const db = require("./config/db"); // your DB config
-const authRouter = require("./routes/auth");
 
 const salaryRouter = require("./routes/salary.routes"); // import your salary router
 const employeeRouter = require("./routes/employee.routes"); // if you have employee routes
